@@ -53,7 +53,7 @@ hexo.extend.helper.register("cloudTags", function (options = {}) {
       const style = generateStyle(size, unit);
       return `<a href="${env.url_for(tag.path)}" style="${style}">${
         tag.name
-      }<sup>${tag.length}</sup></a>`;
+      }<sup>${tag.length}</sup></a>`; // 让标签生成上标
     })
     .join("");
 
